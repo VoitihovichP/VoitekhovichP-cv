@@ -1,12 +1,15 @@
 import React, { FC } from 'react';
-import styled from 'styled-components';
+import MainPage from './pages/MainPage/MainPage';
+import GlobalStyles from './index.styled';
+import * as S from './App.styled';
 
 const App: FC = () => {
   return (
-    <div>
-      <h1>App</h1>
-    </div>
+    <S.Container>
+      <MainPage />
+      <GlobalStyles />
+    </S.Container>
   );
-} 
+};
 
 export default App;
